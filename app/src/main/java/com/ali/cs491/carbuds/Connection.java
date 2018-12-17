@@ -32,6 +32,7 @@ public class Connection {
     public static final String SWITCH_PROFILE = "switch_profile";
     public static final String GET_DRIVER_CANDIDATE = "get_driver_candidate";
     public static final String GET_HITCHHIKER_CANDIDATE = "get_hitchhiker_candidate";
+    public static final String GET_MATCHES = "get_matches";
 
     private String msg;
     public Connection(){
@@ -41,8 +42,8 @@ public class Connection {
         HttpURLConnection urlConnection = null;
         OutputStream out = null;
         try {
-            URL url = new URL("http://35.205.45.78/" + type);
-           // URL url = new URL("http://10.0.2.2:5000/"+ type);
+            //URL url = new URL("http://35.205.45.78/" + type);
+            URL url = new URL("http://10.0.2.2:5000/"+ type);
             urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestMethod("POST");
             urlConnection.setRequestProperty("Content-Type","application/json");

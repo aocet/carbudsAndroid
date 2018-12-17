@@ -71,12 +71,11 @@ public class MainActivity extends AppCompatActivity {
             //     startActivity(intent);
             }
         });
-
     }
 
     public void showToken(View view) {
      //   mTextView.setText(FirebaseInstanceId.getInstance().getToken());
-        Log.i("token", FirebaseInstanceId.getInstance().getToken());
+     //   Log.i("token", FirebaseInstanceId.getInstance().getToken());
     }
 
     public void subscribe(View view) {

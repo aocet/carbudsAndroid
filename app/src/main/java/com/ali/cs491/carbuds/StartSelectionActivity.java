@@ -94,6 +94,7 @@ public class StartSelectionActivity extends FragmentActivity implements OnMapRea
       
         searchButton = findViewById(R.id.searchButton);
 
+
         searchButton.setText("Next");
         searchBar.setOnKeyListener(new View.OnKeyListener() {
             @Override
@@ -134,6 +135,8 @@ public class StartSelectionActivity extends FragmentActivity implements OnMapRea
                 }
             }
         });
+
+
     }
 
 
